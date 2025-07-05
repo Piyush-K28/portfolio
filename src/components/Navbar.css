@@ -1,25 +1,53 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-  }
-  
-  .navbar h1 {
-    color: white;
-  }
-  
-  .navbar ul {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar ul li {
-    list-style: none;
-  }
-  
-  .navbar ul li a {
-    color: white;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.75); /* glassy dark */
+  backdrop-filter: blur(10px);
+  padding: 12px 32px;
+  transition: background 0.3s ease;
+}
+
+.navbar h1 {
+  color: var(--text-color);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  position: relative;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* animated underline */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
