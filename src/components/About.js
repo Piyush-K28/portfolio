@@ -49,6 +49,29 @@ function About() {
             </button>
           </div>
         </div>
+
+        <div className="profile-overview">
+          <div className="overview-card">
+            <h3 className="overview-title">About My Journey</h3>
+            <div className="overview-content">
+              <p className="overview-text">
+                I'm a passionate Frontend Developer with <strong>1+ years of experience</strong> in building 
+                modern, responsive web applications. My journey in tech began with a curiosity for creating 
+                digital experiences that users love.
+              </p>
+              <p className="overview-text">
+                I specialize in <strong>React ecosystem</strong> and have worked on various projects ranging from 
+                crypto platforms to browser extensions. My expertise lies in transforming complex requirements 
+                into intuitive, performant user interfaces using the latest technologies.
+              </p>
+              <p className="overview-text">
+                Currently focused on mastering <strong>TypeScript</strong> and <strong>Next.js</strong> while 
+                exploring the latest trends in frontend development. I'm always eager to take on new challenges 
+                and contribute to innovative projects that make a difference.
+              </p>
+            </div>
+          </div>
+        </div>
         
         <div className="skills-section">
           <h2 className="skills-title">Skills</h2>
