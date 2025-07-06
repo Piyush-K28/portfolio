@@ -114,6 +114,18 @@
   transform: translateY(0);
 }
 
+.resume-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.resume-btn:disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 15px rgba(120, 119, 198, 0.3);
+  background: linear-gradient(135deg, #7877c6, #ff77c6);
+}
+
 .skills-section {
   animation: fadeInUp 0.8s ease-out 0.8s both;
 }
